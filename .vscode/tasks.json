@@ -37,6 +37,15 @@
           }
         }
       }
+    },
+    {
+      "label": "Start Project",
+      "type": "shell",
+      "command": "npm start",
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     }
   ]
 }
