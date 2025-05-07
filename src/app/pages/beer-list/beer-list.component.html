@@ -1,0 +1,19 @@
+<h1>Beer List</h1>
+<div class="flex flex-column sm:flex-row align-items-center gap-3 mt-4 p-3">
+  <input
+    type="number"
+    pInputText
+    [(ngModel)]="beerId"
+    placeholder="Introduce el ID de la cerveza"
+    class="input"
+  />
+  <button
+    pButton
+    type="button"
+    icon="pi pi-search"
+    label="Buscar"
+    class="p-button-outlined"
+    (click)="goToBeer()"
+    [disabled]="!beerId"
+  ></button>
+</div>
